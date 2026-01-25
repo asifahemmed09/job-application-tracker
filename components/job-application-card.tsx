@@ -177,7 +177,7 @@ export default function JobApplicationCard({
 
       {/* FIXED DIALOG STYLING */}
       <Dialog open={isEditing} onOpenChange={setIsEditing}>
-        <DialogContent className="sm:max-w-[600px] w-[95vw] max-h-[90vh] overflow-y-auto rounded-lg shadow-xl border bg-white p-6">
+        <DialogContent className="sm:max-w-150 w-[95vw] max-h-[90vh] overflow-y-auto rounded-lg shadow-xl border bg-white p-6">
           <DialogHeader className="mb-4">
             <DialogTitle className="text-xl font-bold text-slate-900">Edit Job Application</DialogTitle>
             <DialogDescription className="text-slate-500">

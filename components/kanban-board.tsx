@@ -1,10 +1,8 @@
 "use client";
 
-import { Board, Column, JobApplication } from "@/lib/models/models.types";
-import { Award, Calendar, CheckCircle2, Mic, MoreVertical, Trash2, XCircle } from "lucide-react";
+import { Board } from "@/lib/models/models.types";
+import { Award, Calendar, CheckCircle2, Mic, XCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
 import CreateJobApplicationDialog from "./create-job-dialog";
 import JobApplicationCard from "./job-application-card";
 import { useBoard } from "@/lib/hooks/useBoards";
@@ -42,7 +40,7 @@ function DroppableColumn({ column, config, boardId, sortedColumns }: any) {
       </CardHeader>
       <CardContent
         ref={setNodeRef}
-        className={`flex-1 p-2 min-h-[150px] transition-colors ${isOver ? "bg-blue-50" : "bg-slate-50"}`}
+        className={`flex-1 p-2 min-h-37.5 transition-colors ${isOver ? "bg-blue-50" : "bg-slate-50"}`}
       >
         <SortableContext items={sortedJobs.map(j => j._id)} strategy={verticalListSortingStrategy}>
           <div className="space-y-2">
@@ -97,7 +95,7 @@ export default function KanbanBoard({ board }: { board: Board; userId: string })
         ))}
       </div>
       <DragOverlay>
-        {activeId ? <div className="w-full max-w-[300px] rotate-2 shadow-2xl opacity-90"><div className="bg-white p-4 rounded border">Moving...</div></div> : null}
+        {activeId ? <div className="w-full max-w-75 rotate-2 shadow-2xl opacity-90"><div className="bg-white p-4 rounded border">Moving...</div></div> : null}
       </DragOverlay>
     </DndContext>
   );

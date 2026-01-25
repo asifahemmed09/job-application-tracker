@@ -77,7 +77,7 @@ export default function CreateJobApplicationDialog({
         </Button>
       </DialogTrigger>
       {/* FIXED: Constrained width, centered on screen, and scrollable if content exceeds height */}
-      <DialogContent className="sm:max-w-[600px] w-[95vw] max-h-[90vh] overflow-y-auto rounded-lg shadow-xl border bg-white p-6">
+      <DialogContent className="sm:max-w-2xl w-[95vw] max-h-[90vh] overflow-y-auto rounded-lg shadow-xl border bg-white p-6">
         <DialogHeader className="mb-4">
           <DialogTitle className="text-xl font-bold">Add Job Application</DialogTitle>
           <DialogDescription className="text-slate-500">

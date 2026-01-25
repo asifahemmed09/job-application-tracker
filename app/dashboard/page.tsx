@@ -32,7 +32,7 @@ async function DashboardPage() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 overflow-x-hidden">
-      <div className="mx-auto max-w-[1600px] px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-400 px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h1 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
             Job Hunt
