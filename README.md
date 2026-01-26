@@ -88,7 +88,7 @@ Try the application now: [https://job-application-tracker-six-gold.vercel.app/](
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/asifahemmed09/job-application-tracker
    cd job-application-tracker
    ```
 
